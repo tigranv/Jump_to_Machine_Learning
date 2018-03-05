@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "UdacityIntroToML", "UdacityIntroToML.pyproj", "{B1361FE0-F558-4C19-A3F6-25D1A356D3E6}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "KatieExamples", "..\KatieExamples\KatieExamples.pyproj", "{364624B9-CF73-494C-B74C-6C7B0ED83422}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B1361FE0-F558-4C19-A3F6-25D1A356D3E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1361FE0-F558-4C19-A3F6-25D1A356D3E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{364624B9-CF73-494C-B74C-6C7B0ED83422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{364624B9-CF73-494C-B74C-6C7B0ED83422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
