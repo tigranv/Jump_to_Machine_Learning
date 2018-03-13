@@ -1,4 +1,3 @@
-#!/usr/bin/python
 
 """ Complete the code in ClassifyNB.py with the sklearn
     Naive Bayes classifier to classify the terrain data.
@@ -9,12 +8,11 @@
 
 
 from prep_terrain_data import makeTerrainData
-from class_vis import prettyPicture, output_image
+from class_vis import prettyPicture, Show_Image
 from ClassifyNB import classify
 
-import numpy as np
-import pylab as pl
-
+#import numpy as np
+#import pylab as pl
 
 features_train, labels_train, features_test, labels_test = makeTerrainData()
 
@@ -31,10 +29,11 @@ bumpy_slow = [features_train[ii][1] for ii in range(0, len(features_train)) if l
 # Be sure to change to that code tab to complete this quiz.
 clf = classify(features_train, labels_train)
 
-
-### draw the decision boundary with the text points overlaid
+#### draw the decision boundary with the text points overlaid
 prettyPicture(clf, features_test, labels_test)
-output_image("test.png", "png", open("test.png", "rb").read())
+
+Show_Image("test.png")
+
 
     
 

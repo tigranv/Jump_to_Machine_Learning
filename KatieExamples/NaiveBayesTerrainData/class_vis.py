@@ -1,13 +1,6 @@
-#!/usr/bin/python
-
-#from udacityplots import *
-import warnings
-warnings.filterwarnings("ignore")
-
-import matplotlib 
-matplotlib.use('agg')
 
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import pylab as pl
 import numpy as np
 
@@ -45,16 +38,10 @@ def prettyPicture(clf, X_test, y_test):
     plt.ylabel("grade")
 
     plt.savefig("test.png")
+ 
     
-import base64
-import json
-import subprocess
+def Show_Image(path):
+    img = mpimg.imread(path)
+    plt.imshow(img)
+    plt.show()
 
-def output_image(name, format, bytes):
-    image_start = "BEGIN_IMAGE_f9825uweof8jw9fj4r8"
-    image_end = "END_IMAGE_0238jfw08fjsiufhw8frs"
-    data = {}
-    data['name'] = name
-    data['format'] = format
-    data['bytes'] = base64.encodestring(bytes)
-    print(image_start+json.dumps(data)+image_end)
