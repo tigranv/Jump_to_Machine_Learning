@@ -1,7 +1,44 @@
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-import numpy as np
+#!/usr/bin/python
 
-x = np.linspace(0, 20, 100)
-plt.plot(x, np.sin(x))
-plt.show()
+""" 
+    This is the code to accompany the Lesson 1 (Naive Bayes) mini-project. 
+
+    Use a Naive Bayes Classifier to identify emails by their authors
+    
+    authors and labels:
+    Sara has label 0
+    Chris has label 1
+"""
+    
+import sys
+from time import time
+sys.path.append("../UdacityIntroToML/tools/")
+from email_preprocess import preprocess
+
+
+### features_train and features_test are the features for the training
+### and testing datasets, respectively
+### labels_train and labels_test are the corresponding item labels
+features_train, features_test, labels_train, labels_test = preprocess()
+
+print('-------------------------------------------------------')
+#########################################################
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score
+classify = GaussianNB()
+
+t0 = time()
+classify.fit(features_train, labels_train)
+print("training time:", round(time()-t0, 3), "s")
+
+print("-----------------------------------------------------")
+
+t0 = time()
+pred = classify.predict(features_test)
+print("predicting time:", round(time()-t0, 3), "s")
+
+accuracy = accuracy_score(labels_test, pred)
+
+print("Accuracy is : {}".format(accuracy))
+#########################################################
+

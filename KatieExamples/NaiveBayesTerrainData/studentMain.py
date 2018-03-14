@@ -9,7 +9,7 @@
 
 from prep_terrain_data import makeTerrainData
 from class_vis import prettyPicture, Show_Image
-from ClassifyNB import classify
+from ClassifyNB import classify, NBAccuracy
 
 #import numpy as np
 #import pylab as pl
@@ -33,6 +33,10 @@ clf = classify(features_train, labels_train)
 prettyPicture(clf, features_test, labels_test)
 
 Show_Image("test.png")
+
+print(NBAccuracy(clf, features_test, labels_test))
+
+
 
 
     

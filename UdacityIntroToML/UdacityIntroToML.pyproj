@@ -24,9 +24,13 @@
     <Compile Include="NaiveBayes\naive_bayes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="tools\email_preprocess.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NaiveBayes\" />
+    <Folder Include="tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
