@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DecisionTrees\decision_trees.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NaiveBayes\naive_bayes.py">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NaiveBayes\" />
+    <Folder Include="C:\Users\Tigran\Source\Repos\Intro_Machine_Learning_VS\UdacityIntroToML\DecisionTrees\" />
     <Folder Include="SVM\" />
     <Folder Include="tools\" />
   </ItemGroup>

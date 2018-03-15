@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>364624b9-cf73-494c-b74c-6c7b0ed83422</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SVM\MainSVM.py</StartupFile>
+    <StartupFile>DecisionTrees\MainDecisionTrees.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,9 +24,13 @@
     <Folder Include="C:\Users\Tigran\Source\Repos\Intro_Machine_Learning_VS\KatieExamples\NaiveBayesTerrainData\" />
     <Folder Include="NaiveBayesTerrainData\" />
     <Folder Include="HelpersAndData\" />
+    <Folder Include="DecisionTrees\" />
     <Folder Include="SVM\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DecisionTrees\MainDecisionTrees.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="HelpersAndData\ClassifyHelper.py">
       <SubType>Code</SubType>
     </Compile>
