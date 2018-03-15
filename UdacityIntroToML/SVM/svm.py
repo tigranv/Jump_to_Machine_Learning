@@ -1,10 +1,8 @@
 
 """ 
-    This is the code to accompany the Lesson 1 (Naive Bayes) mini-project. 
+    This is the code to accompany the Lesson 2 (SVM) mini-project.
 
-    Use a Naive Bayes Classifier to identify emails by their authors
-    
-    authors and labels:
+    Use a SVM to identify emails from the Enron corpus by their authors:    
     Sara has label 0
     Chris has label 1
 """
@@ -20,12 +18,16 @@ from email_preprocess import preprocess
 ### and testing datasets, respectively
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
+
 print("-----------------------------------------------------")
 
+#features_train = features_train[:(int)(len(features_train)/100)] 
+#labels_train = labels_train[:(int)(len(labels_train)/100)] 
 #########################################################
-from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
-classify = GaussianNB()
+#classify = SVC(C = 10000, kernel="linear")
+classify = SVC(C = 10000, kernel="rbf")
 
 t0 = time()
 print("Fitting starts  at {}".format(datetime.datetime.now().time()))
@@ -39,11 +41,17 @@ print("Predicting starts  at {}".format(datetime.datetime.now().time()))
 pred = classify.predict(features_test)
 print("Predicting finished at {},  training time: {}".format(datetime.datetime.now().time(), round(time()-t0, 3)))
 
-print("-----------------------------------------------------")
-
 accuracy = accuracy_score(labels_test, pred)
 
+print("-----------------------------------------------------")
+
 print("Accuracy is : {}".format(accuracy))
+
+print("For 10 is {}, For 26 is {}, For 50 is {},".format(pred[10], pred[26], pred[50]))
+
+print(sum(pred))
+
 #########################################################
+
 
 

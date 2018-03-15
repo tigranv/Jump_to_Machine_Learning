@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>364624b9-cf73-494c-b74c-6c7b0ed83422</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NaiveBayesTerrainData\studentMain.py</StartupFile>
+    <StartupFile>SVM\MainSVM.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,18 +23,23 @@
   <ItemGroup>
     <Folder Include="C:\Users\Tigran\Source\Repos\Intro_Machine_Learning_VS\KatieExamples\NaiveBayesTerrainData\" />
     <Folder Include="NaiveBayesTerrainData\" />
+    <Folder Include="HelpersAndData\" />
+    <Folder Include="SVM\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NaiveBayesTerrainData\ClassifyNB.py">
+    <Compile Include="HelpersAndData\ClassifyHelper.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NaiveBayesTerrainData\class_vis.py">
+    <Compile Include="HelpersAndData\class_vis.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NaiveBayesTerrainData\prep_terrain_data.py">
+    <Compile Include="HelpersAndData\prep_terrain_data.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NaiveBayesTerrainData\studentMain.py">
+    <Compile Include="NaiveBayesTerrainData\MainNaiveBayes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SVM\MainSVM.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

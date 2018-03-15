@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>766361d0-353a-4036-936e-428f323df349</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Pandas\Pandas3.py</StartupFile>
+    <StartupFile>Sklearn\NaiveBayes.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,8 +24,12 @@
     <Compile Include="Pandas\Pandas1.py" />
     <Compile Include="Pandas\Pandas2.py" />
     <Compile Include="Pandas\Pandas3.py" />
+    <Compile Include="Sklearn\NaiveBayes.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Sklearn\" />
     <Folder Include="Pandas\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

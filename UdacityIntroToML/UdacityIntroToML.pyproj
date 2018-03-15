@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b1361fe0-f558-4c19-a3f6-25d1a356d3e6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NaiveBayes\naive_bayes.py</StartupFile>
+    <StartupFile>SVM\svm.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,12 +24,19 @@
     <Compile Include="NaiveBayes\naive_bayes.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SVM\accuracy_svm_testing.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SVM\svm.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="tools\email_preprocess.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="NaiveBayes\" />
+    <Folder Include="SVM\" />
     <Folder Include="tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
