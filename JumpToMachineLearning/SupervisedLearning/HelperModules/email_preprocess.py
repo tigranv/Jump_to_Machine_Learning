@@ -8,7 +8,7 @@ from sklearn.feature_selection import SelectPercentile, f_classif
 
 
 
-def preprocess(words_file = "../JumpToMachineLearning/AppData/word_data.pkl", authors_file="../JumpToMachineLearning/AppData/email_authors.pkl"):
+def preprocess(words_file="../JumpToMachineLearning/AppData/word_data.pkl", authors_file="../JumpToMachineLearning/AppData/email_authors.pkl", percentile=10):
     """ 
         this function takes a pre-made list of email texts (by default word_data.pkl)
         and the corresponding authors (by default email_authors.pkl) and performs
@@ -45,20 +45,20 @@ def preprocess(words_file = "../JumpToMachineLearning/AppData/word_data.pkl", au
     vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.5,
                                  stop_words='english')
     features_train_transformed = vectorizer.fit_transform(features_train)
-    features_test_transformed  = vectorizer.transform(features_test)
+    features_test_transformed = vectorizer.transform(features_test)
 
 
 
-    ### feature selection, because text is super high dimensional and 
+    ### feature selection, because text is super high dimensional and
     ### can be really computationally chewy as a result
-    selector = SelectPercentile(f_classif, percentile=10)
+    selector = SelectPercentile(f_classif, percentile=percentile)
     selector.fit(features_train_transformed, labels_train)
     features_train_transformed = selector.transform(features_train_transformed).toarray()
-    features_test_transformed  = selector.transform(features_test_transformed).toarray()
+    features_test_transformed = selector.transform(features_test_transformed).toarray()
 
     ### info on the data
     print("no. of Chris training emails:", sum(labels_train))
-    print("no. of Sara training emails:", len(labels_train)-sum(labels_train))
+    print("no. of Sara training emails:", len(labels_train) - sum(labels_train))
     
     return features_train_transformed, features_test_transformed, labels_train, labels_test
 

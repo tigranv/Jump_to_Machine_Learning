@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py</StartupFile>
+    <StartupFile>SupervisedLearning\ClassificationModels\KNeighbors\playing_with_parameters.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,12 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Neuralnetworks\" />
+    <Folder Include="C:\Users\Tigran\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\NeuralNetworks\" />
     <Folder Include="C:\Users\Tigran\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\SupervisedLearning\HelperModules\" />
     <Folder Include="AppData\" />
     <Folder Include="SupervisedLearning\ClassificationModels\" />
     <Folder Include="SupervisedLearning\ClassificationModels\NaiveBayes\" />
     <Folder Include="SupervisedLearning\ClassificationModels\DecisionTrees\" />
+    <Folder Include="SupervisedLearning\ClassificationModels\KNeighbors\" />
     <Folder Include="SupervisedLearning\ClassificationModels\SVM\" />
     <Folder Include="UnsupervisedLearning\" />
     <Folder Include="SupervisedLearning\" />
@@ -34,6 +35,15 @@
   <ItemGroup>
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\dt_on_email_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py" />
+    <Compile Include="SupervisedLearning\ClassificationModels\KNeighbors\k_neighbors_on_email_data.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupervisedLearning\ClassificationModels\KNeighbors\playing_with_parameters.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupervisedLearning\ClassificationModels\KNeighbors\terrain_data_k__neighboars.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SupervisedLearning\ClassificationModels\NaiveBayes\terrain_data_nb.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\SVM\accurracy_svm_testing.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\SVM\terrain_data_svm.py" />
@@ -42,7 +52,7 @@
     <Compile Include="SupervisedLearning\HelperModules\class_vis.py" />
     <Compile Include="SupervisedLearning\HelperModules\email_preprocess.py" />
     <Compile Include="SupervisedLearning\HelperModules\prep_terrain_data.py" />
-    <Compile Include="Neuralnetworks\module1.py">
+    <Compile Include="NeuralNetworks\module1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SupervisedLearning\ClassificationModels\NaiveBayes\nb_on_emails_data.py" />
