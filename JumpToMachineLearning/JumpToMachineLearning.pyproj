@@ -1,0 +1,66 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>JumpToMachineLearning</Name>
+    <RootNamespace>JumpToMachineLearning</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Neuralnetworks\" />
+    <Folder Include="C:\Users\Tigran\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\SupervisedLearning\HelperModules\" />
+    <Folder Include="AppData\" />
+    <Folder Include="SupervisedLearning\ClassificationModels\" />
+    <Folder Include="SupervisedLearning\ClassificationModels\NaiveBayes\" />
+    <Folder Include="SupervisedLearning\ClassificationModels\DecisionTrees\" />
+    <Folder Include="SupervisedLearning\ClassificationModels\SVM\" />
+    <Folder Include="UnsupervisedLearning\" />
+    <Folder Include="SupervisedLearning\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\dt_on_email_data.py" />
+    <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py" />
+    <Compile Include="SupervisedLearning\ClassificationModels\NaiveBayes\terrain_data_nb.py" />
+    <Compile Include="SupervisedLearning\ClassificationModels\SVM\accurracy_svm_testing.py" />
+    <Compile Include="SupervisedLearning\ClassificationModels\SVM\terrain_data_svm.py" />
+    <Compile Include="SupervisedLearning\ClassificationModels\SVM\svm_on_email_data.py" />
+    <Compile Include="SupervisedLearning\HelperModules\ClassifyHelper.py" />
+    <Compile Include="SupervisedLearning\HelperModules\class_vis.py" />
+    <Compile Include="SupervisedLearning\HelperModules\email_preprocess.py" />
+    <Compile Include="SupervisedLearning\HelperModules\prep_terrain_data.py" />
+    <Compile Include="Neuralnetworks\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupervisedLearning\ClassificationModels\NaiveBayes\nb_on_emails_data.py" />
+    <Compile Include="UnsupervisedLearning\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppData\email_authors.pkl" />
+    <Content Include="AppData\word_data.pkl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
