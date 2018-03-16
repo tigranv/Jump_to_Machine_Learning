@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SupervisedLearning\ClassificationModels\KNeighbors\playing_with_parameters.py</StartupFile>
+    <StartupFile>SupervisedLearning\ClassificationModels\KNeighbors\k_neighbors_on_email_data.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,16 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="C:\Users\Tigran\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\NeuralNetworks\" />
-    <Folder Include="C:\Users\Tigran\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\SupervisedLearning\HelperModules\" />
+    <Folder Include="NeuralNetworks\" />
+    <Folder Include="UnsupervisedLearning\" />
+    <Folder Include="SupervisedLearning\" />
     <Folder Include="AppData\" />
+    <Folder Include="SupervisedLearning\HelperModules\" />
     <Folder Include="SupervisedLearning\ClassificationModels\" />
     <Folder Include="SupervisedLearning\ClassificationModels\NaiveBayes\" />
     <Folder Include="SupervisedLearning\ClassificationModels\DecisionTrees\" />
     <Folder Include="SupervisedLearning\ClassificationModels\KNeighbors\" />
     <Folder Include="SupervisedLearning\ClassificationModels\SVM\" />
-    <Folder Include="UnsupervisedLearning\" />
-    <Folder Include="SupervisedLearning\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\dt_on_email_data.py" />
