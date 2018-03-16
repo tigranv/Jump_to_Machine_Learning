@@ -6,7 +6,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 ### [Classification Models](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/ClassificationModels)
 
-* [Naive Bayes](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/ClassificationModels/NaiveBayes)
+* [Naive Bayes](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/ClassificationModels/NaiveBayes) <img src="https://github.com/tigranv/Jump_to_Machine_Learning/blob/master/JumpToMachineLearning/AppData/NBclf.png" align="right" width="170px" height="150px" /> 
 
 * [SVM (Support vector machine)](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/ClassificationModels/SVM)
 
@@ -16,12 +16,12 @@ In this repository, I gathered a lot of useful examples that I create while stud
 ### Regression Models 
 ### Trees, Ensemble Methods
  
-## Unsupervised Learning
+## [**Unsupervised Learning**](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/UnsupervisedLearning)
 
 ### Clustering
 ### Dimensionality Reduction
 
-## Neural Networks
+## [**Neural Networks**](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/Neuralnetworks)
 
 ### Neural Networks and Backpropagation
 ### Convolutional Neural Networks
