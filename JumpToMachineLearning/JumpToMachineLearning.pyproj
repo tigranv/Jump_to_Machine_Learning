@@ -33,6 +33,9 @@
     <Folder Include="SupervisedLearning\ClassificationModels\SVM\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppData\unix_converter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\dt_on_email_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\KNeighbors\k_neighbors_on_email_data.py">
