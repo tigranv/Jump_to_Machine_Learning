@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SupervisedLearning\ClassificationModels\KNeighbors\k_neighbors_on_email_data.py</StartupFile>
+    <StartupFile>FinalProject\WorkingWithEnronData\explore_enron_data.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="FinalProject\WorkingWithEnronData\" />
     <Folder Include="NeuralNetworks\" />
+    <Folder Include="FinalProject\" />
     <Folder Include="UnsupervisedLearning\" />
     <Folder Include="SupervisedLearning\" />
     <Folder Include="AppData\" />
@@ -36,6 +38,7 @@
     <Compile Include="AppData\unix_converter.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FinalProject\WorkingWithEnronData\explore_enron_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\dt_on_email_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\KNeighbors\k_neighbors_on_email_data.py">
@@ -65,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppData\email_authors.pkl" />
+    <Content Include="AppData\poi_names.txt" />
     <Content Include="AppData\word_data.pkl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
