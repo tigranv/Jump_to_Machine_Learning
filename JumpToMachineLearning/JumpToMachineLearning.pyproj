@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="FinalProject\HelperFuctions\" />
     <Folder Include="FinalProject\WorkingWithEnronData\" />
     <Folder Include="NeuralNetworks\" />
     <Folder Include="FinalProject\" />
@@ -38,6 +39,7 @@
     <Compile Include="AppData\unix_converter.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FinalProject\HelperFuctions\feature_format.py" />
     <Compile Include="FinalProject\WorkingWithEnronData\explore_enron_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\dt_on_email_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py" />

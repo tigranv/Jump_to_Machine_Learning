@@ -74,15 +74,33 @@ print('Have quantified salary - ', len(dict((key, value) for key, value in enron
 print('Have known email address? - ', len(dict((key, value) for key, value in enron_data.items() if value["email_address"] != 'NaN')))
 
 # How many people in the E+F dataset (as it currently exists) have NAN for their total payments? What percentage of people in the dataset as a whole is this?
+have_nan_for_payments = len(dict((key, value) for key, value in enron_data.items() if value["total_payments"] == 'NaN'))
+print('Have NAN for their total payments? - {}, and it is {}%'.format(have_nan_for_payments, have_nan_for_payments/len(enron_data)*100))
 
-
-# How many POIs in the E+F dataset have â€œNaNâ€ for their total payments? What percentage of POIâ€™s as a whole is this?
-
+# How many POIs in the E+F dataset have NAN for their total payments? What percentage of POIs as a whole is this?
+POIs = dict((key,value) for key, value in enron_data.items() if value['poi'] == True)
+number_POIs = len(POIs)
+no_total_payments = len(dict((key, value) for key, value in POIs.items() if value["total_payments"] == 'NaN'))
+print('Have NAN for their total payments? - {}, and it is {}%'.format(no_total_payments, no_total_payments*100/number_POIs))
 
 # If 10 POIs with NaN total_payments were added, what is the new number of people?
+print(len(enron_data) + 10)
 # What is the new number of people with NaN total_payments?
+print(10 + len(dict((key, value) for key, value in enron_data.items() if value["total_payments"] == 'NaN')))
 
 # What is the new number of POIs?
+print(10 + len(POIs))
 
 # What percentage have NaN for their total_payments?
+print(float(10)/(10 + len(POIs))*100)
 
+# import sys
+# sys.path.append("../JumpToMachineLearning/FinalProject/Helperfunctions/")
+# import feature_format
+#
+# feature_list = ["poi", "salary", "bonus"]
+# data_array = feature_format.featureFormat( enron_data, feature_list )
+# label, features = feature_format.targetFeatureSplit(data_array)
+#
+# print(data_array)
+# print(enron_data['KRAUTZ MICHAEL'])
