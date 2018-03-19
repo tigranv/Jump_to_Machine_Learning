@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SupervisedLearning\ClassificationModels\SVM\terrain_data_svm.py</StartupFile>
+    <StartupFile>SupervisedLearning\RegressionModels\Outliers\outlier_removal_regression.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +28,7 @@
     <Folder Include="Helpers\" />
     <Folder Include="SupervisedLearning\RegressionModels\" />
     <Folder Include="SupervisedLearning\RegressionModels\LinearRegression\" />
+    <Folder Include="SupervisedLearning\RegressionModels\Outliers\" />
     <Folder Include="UnsupervisedLearning\" />
     <Folder Include="SupervisedLearning\" />
     <Folder Include="AppData\" />
@@ -72,6 +73,9 @@
     <Compile Include="SupervisedLearning\RegressionModels\LinearRegression\regression_on_enron_data.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SupervisedLearning\RegressionModels\Outliers\enron_outliers.py" />
+    <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_cleaner.py" />
+    <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_removal_regression.py" />
     <Compile Include="UnsupervisedLearning\module1.py">
       <SubType>Code</SubType>
     </Compile>
@@ -80,6 +84,8 @@
     <Content Include="AppData\email_authors.pkl" />
     <Content Include="AppData\final_project_dataset_modified.pkl" />
     <Content Include="AppData\poi_names.txt" />
+    <Content Include="AppData\practice_outliers_ages.pkl" />
+    <Content Include="AppData\practice_outliers_net_worths.pkl" />
     <Content Include="AppData\python2_lesson06_keys.pkl" />
     <Content Include="AppData\word_data.pkl" />
   </ItemGroup>

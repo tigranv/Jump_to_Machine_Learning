@@ -56,3 +56,31 @@ with open(destination, 'wb') as output:
         outsize += len(line) + 1
         output.write(line + str.encode('\n'))
 
+
+#--------------------------------------------------------------------------------------
+original = "../JumpToMachineLearning/AppData/practice_outliers_ages.pkl"
+destination = "../JumpToMachineLearning/AppData/practice_outliers_ages.pkl"
+
+content = ''
+outsize = 0
+with open(original, 'rb') as infile:
+    content = infile.read()
+with open(destination, 'wb') as output:
+    for line in content.splitlines():
+        outsize += len(line) + 1
+        output.write(line + str.encode('\n'))
+
+
+#--------------------------------------------------------------------------------------
+original = "../JumpToMachineLearning/AppData/practice_outliers_net_worths.pkl"
+destination = "../JumpToMachineLearning/AppData/practice_outliers_net_worths.pkl"
+
+content = ''
+outsize = 0
+with open(original, 'rb') as infile:
+    content = infile.read()
+with open(destination, 'wb') as output:
+    for line in content.splitlines():
+        outsize += len(line) + 1
+        output.write(line + str.encode('\n'))
+
