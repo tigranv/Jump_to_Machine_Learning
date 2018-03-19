@@ -1,7 +1,7 @@
 import sys
-sys.path.append("../JumpToMachineLearning/SupervisedLearning/HelperModules/")
+sys.path.append("../JumpToMachineLearning/Helpers/")
 
-from prep_terrain_data import makeTerrainData
+from prep_data import makeTerrainData
 from class_vis import prettyPicture, Show_Image
 from ClassifyHelper import Accuracy
 

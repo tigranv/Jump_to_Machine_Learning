@@ -37,10 +37,11 @@ def prettyPicture(clf, X_test, y_test, picture_name):
     plt.xlabel("bumpiness")
     plt.ylabel("grade")
 
-    plt.savefig("../JumpToMachineLearning/AppData/" + picture_name)
+    plt.savefig("../JumpToMachineLearning/AppData/Plots/" + picture_name)
+
     
 def Show_Image(path):
-    img = mpimg.imread("../JumpToMachineLearning/AppData/" + path)
-    plt.imshow(img)
+    img = mpimg.imread("../JumpToMachineLearning/AppData/Plots/" + path)
+    #plt.imshow(img)
     plt.show()
 

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FinalProject\WorkingWithEnronData\explore_enron_data.py</StartupFile>
+    <StartupFile>SupervisedLearning\ClassificationModels\SVM\terrain_data_svm.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,14 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="FinalProject\HelperFuctions\" />
+    <Folder Include="AppData\Plots\" />
     <Folder Include="FinalProject\WorkingWithEnronData\" />
     <Folder Include="NeuralNetworks\" />
     <Folder Include="FinalProject\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="SupervisedLearning\RegressionModels\" />
+    <Folder Include="SupervisedLearning\RegressionModels\LinearRegression\" />
     <Folder Include="UnsupervisedLearning\" />
     <Folder Include="SupervisedLearning\" />
     <Folder Include="AppData\" />
-    <Folder Include="SupervisedLearning\HelperModules\" />
     <Folder Include="SupervisedLearning\ClassificationModels\" />
     <Folder Include="SupervisedLearning\ClassificationModels\NaiveBayes\" />
     <Folder Include="SupervisedLearning\ClassificationModels\DecisionTrees\" />
@@ -36,10 +38,10 @@
     <Folder Include="SupervisedLearning\ClassificationModels\SVM\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppData\unix_converter.py">
+    <Compile Include="Helpers\unix_converter.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="FinalProject\HelperFuctions\feature_format.py" />
+    <Compile Include="Helpers\feature_format.py" />
     <Compile Include="FinalProject\WorkingWithEnronData\explore_enron_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\dt_on_email_data.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\DecisionTrees\terrain_data_dt.py" />
@@ -56,21 +58,29 @@
     <Compile Include="SupervisedLearning\ClassificationModels\SVM\accurracy_svm_testing.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\SVM\terrain_data_svm.py" />
     <Compile Include="SupervisedLearning\ClassificationModels\SVM\svm_on_email_data.py" />
-    <Compile Include="SupervisedLearning\HelperModules\ClassifyHelper.py" />
-    <Compile Include="SupervisedLearning\HelperModules\class_vis.py" />
-    <Compile Include="SupervisedLearning\HelperModules\email_preprocess.py" />
-    <Compile Include="SupervisedLearning\HelperModules\prep_terrain_data.py" />
+    <Compile Include="Helpers\ClassifyHelper.py" />
+    <Compile Include="Helpers\class_vis.py" />
+    <Compile Include="Helpers\email_preprocess.py" />
+    <Compile Include="Helpers\prep_data.py" />
     <Compile Include="NeuralNetworks\module1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SupervisedLearning\ClassificationModels\NaiveBayes\nb_on_emails_data.py" />
+    <Compile Include="SupervisedLearning\RegressionModels\LinearRegression\ages_net_worths.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupervisedLearning\RegressionModels\LinearRegression\regression_on_enron_data.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="UnsupervisedLearning\module1.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppData\email_authors.pkl" />
+    <Content Include="AppData\final_project_dataset_modified.pkl" />
     <Content Include="AppData\poi_names.txt" />
+    <Content Include="AppData\python2_lesson06_keys.pkl" />
     <Content Include="AppData\word_data.pkl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

@@ -2,7 +2,7 @@
 import sys
 from time import time
 import datetime
-sys.path.append("../JumpToMachineLearning/SupervisedLearning/HelperModules/")
+sys.path.append("../JumpToMachineLearning/Helpers/")
 from email_preprocess import preprocess
 
 

@@ -95,7 +95,7 @@ print(10 + len(POIs))
 print(float(10)/(10 + len(POIs))*100)
 
 # import sys
-# sys.path.append("../JumpToMachineLearning/FinalProject/Helperfunctions/")
+# sys.path.append("../JumpToMachineLearning/Helpers/")
 # import feature_format
 #
 # feature_list = ["poi", "salary", "bonus"]
