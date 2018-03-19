@@ -15,7 +15,13 @@ In this repository, I gathered a lot of useful examples in machine learning. Her
 
 * [Decision Trees](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/ClassificationModels/DecisionTrees)
 
-### Regression Models 
+* [KNeighbors](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/ClassificationModels/KNeighbors)
+### [Regression Models](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/RegressionModels) 
+
+* [Linear Regression](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/RegressionModels/LinearRegression)
+
+* [Outliers](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/SupervisedLearning/RegressionModels/Outliers)
+
 ### Trees, Ensemble Methods
  
 ## [**Unsupervised Learning**](https://github.com/tigranv/Jump_to_Machine_Learning/tree/master/JumpToMachineLearning/UnsupervisedLearning)
