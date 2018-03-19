@@ -22,11 +22,13 @@ net_worths = numpy.reshape( numpy.array(net_worths), (len(net_worths), 1))
 from sklearn.model_selection import train_test_split
 ages_train, ages_test, net_worths_train, net_worths_test = train_test_split(ages, net_worths, test_size=0.1, random_state=42)
 
-### fill in a regression here!  Name the regression object reg so that
-### the plotting code below works, and you can see what your regression looks like
-
-
-
+from sklearn import linear_model
+reg = linear_model.LinearRegression()
+reg.fit(ages_train, net_worths_train)
+print("The slope is {}".format(reg.coef_))
+print('"The intercept" :', reg.intercept_)
+print('"The score on test" :', reg.score(ages_test, net_worths_test))
+print('"The score on training" :', reg.score(ages_train,net_worths_train))
 
 
 try:
@@ -34,6 +36,7 @@ try:
 except NameError:
     pass
 plt.scatter(ages, net_worths)
+plt.savefig("../JumpToMachineLearning/AppData/Plots/outlier_removal_regression_befor_cleaning.png")
 plt.show()
 
 
@@ -45,9 +48,6 @@ try:
 except NameError:
     print("your regression object doesn't exist, or isn't name reg")
     print("can't make predictions to use in identifying outliers")
-
-
-
 
 
 
@@ -69,8 +69,13 @@ if len(cleaned_data) > 0:
     plt.scatter(ages, net_worths)
     plt.xlabel("ages")
     plt.ylabel("net worths")
+    plt.savefig("../JumpToMachineLearning/AppData/Plots/outlier_removal_regression_after_cleaning.png")
     plt.show()
-
+    print("slope, intercept, and score after cleaning data")
+    print("The slope is {}".format(reg.coef_))
+    print('"The intercept" :', reg.intercept_)
+    print('"The score on test" :', reg.score(ages_test, net_worths_test))
+    print('"The score on training" :', reg.score(ages_train,net_worths_train))
 
 else:
     print("outlierCleaner() is returning an empty list, no refitting to be done")

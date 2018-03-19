@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SupervisedLearning\RegressionModels\Outliers\outlier_removal_regression.py</StartupFile>
+    <StartupFile>SupervisedLearning\RegressionModels\Outliers\enron_outliers.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppData\email_authors.pkl" />
+    <Content Include="AppData\enron61702insiderpay.pdf" />
     <Content Include="AppData\final_project_dataset_modified.pkl" />
     <Content Include="AppData\poi_names.txt" />
     <Content Include="AppData\practice_outliers_ages.pkl" />
