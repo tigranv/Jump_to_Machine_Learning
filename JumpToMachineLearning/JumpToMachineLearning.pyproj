@@ -37,6 +37,8 @@
     <Folder Include="SupervisedLearning\ClassificationModels\DecisionTrees\" />
     <Folder Include="SupervisedLearning\ClassificationModels\KNeighbors\" />
     <Folder Include="SupervisedLearning\ClassificationModels\SVM\" />
+    <Folder Include="UnsupervisedLearning\Clustering\" />
+    <Folder Include="C:\Users\Tigran PC\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\UnsupervisedLearning\DimensionalityReduction\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\unix_converter.py">
@@ -76,7 +78,10 @@
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\enron_outliers.py" />
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_cleaner.py" />
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_removal_regression.py" />
-    <Compile Include="UnsupervisedLearning\module1.py">
+    <Compile Include="UnsupervisedLearning\Clustering\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnsupervisedLearning\DimensionalityReduction\module1.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
