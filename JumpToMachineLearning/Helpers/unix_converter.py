@@ -44,6 +44,19 @@ with open(destination, 'wb') as output:
 
 
 #--------------------------------------------------------------------------------------
+original = "../JumpToMachineLearning/AppData/final_project_dataset.pkl"
+destination = "../JumpToMachineLearning/AppData/final_project_dataset.pkl"
+
+content = ''
+outsize = 0
+with open(original, 'rb') as infile:
+    content = infile.read()
+with open(destination, 'wb') as output:
+    for line in content.splitlines():
+        outsize += len(line) + 1
+        output.write(line + str.encode('\n'))
+
+#--------------------------------------------------------------------------------------
 original = "../JumpToMachineLearning/AppData/python2_lesson06_keys.pkl"
 destination = "../JumpToMachineLearning/AppData/python2_lesson06_keys.pkl"
 

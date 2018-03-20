@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SupervisedLearning\RegressionModels\Outliers\enron_outliers.py</StartupFile>
+    <StartupFile>UnsupervisedLearning\Clustering\feature_scaling.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -78,9 +78,10 @@
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\enron_outliers.py" />
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_cleaner.py" />
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_removal_regression.py" />
-    <Compile Include="UnsupervisedLearning\Clustering\module1.py">
+    <Compile Include="UnsupervisedLearning\Clustering\feature_scaling.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="UnsupervisedLearning\Clustering\k_means_cluster.py" />
     <Compile Include="UnsupervisedLearning\DimensionalityReduction\module1.py">
       <SubType>Code</SubType>
     </Compile>
@@ -88,6 +89,7 @@
   <ItemGroup>
     <Content Include="AppData\email_authors.pkl" />
     <Content Include="AppData\enron61702insiderpay.pdf" />
+    <Content Include="AppData\final_project_dataset.pkl" />
     <Content Include="AppData\final_project_dataset_modified.pkl" />
     <Content Include="AppData\poi_names.txt" />
     <Content Include="AppData\practice_outliers_ages.pkl" />
