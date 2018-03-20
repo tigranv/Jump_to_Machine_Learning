@@ -38,7 +38,7 @@
     <Folder Include="SupervisedLearning\ClassificationModels\KNeighbors\" />
     <Folder Include="SupervisedLearning\ClassificationModels\SVM\" />
     <Folder Include="UnsupervisedLearning\Clustering\" />
-    <Folder Include="C:\Users\Tigran PC\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\UnsupervisedLearning\DimensionalityReduction\" />
+    <Folder Include="UnsupervisedLearning\DimensionalityReduction\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\unix_converter.py">
