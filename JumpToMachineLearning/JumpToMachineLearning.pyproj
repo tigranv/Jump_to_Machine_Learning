@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>UnsupervisedLearning\Clustering\feature_scaling.py</StartupFile>
+    <StartupFile>Helpers\startup.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,6 +26,7 @@
     <Folder Include="NeuralNetworks\" />
     <Folder Include="FinalProject\" />
     <Folder Include="Helpers\" />
+    <Folder Include="TextLearning\" />
     <Folder Include="SupervisedLearning\RegressionModels\" />
     <Folder Include="SupervisedLearning\RegressionModels\LinearRegression\" />
     <Folder Include="SupervisedLearning\RegressionModels\Outliers\" />
@@ -41,6 +42,7 @@
     <Folder Include="UnsupervisedLearning\DimensionalityReduction\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\startup.py" />
     <Compile Include="Helpers\unix_converter.py">
       <SubType>Code</SubType>
     </Compile>
@@ -78,6 +80,11 @@
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\enron_outliers.py" />
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_cleaner.py" />
     <Compile Include="SupervisedLearning\RegressionModels\Outliers\outlier_removal_regression.py" />
+    <Compile Include="TextLearning\bag_of_words.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextLearning\parse_out_email_text.py" />
+    <Compile Include="TextLearning\vectorize_text.py" />
     <Compile Include="UnsupervisedLearning\Clustering\feature_scaling.py">
       <SubType>Code</SubType>
     </Compile>
@@ -96,6 +103,9 @@
     <Content Include="AppData\practice_outliers_net_worths.pkl" />
     <Content Include="AppData\python2_lesson06_keys.pkl" />
     <Content Include="AppData\word_data.pkl" />
+    <Content Include="TextLearning\from_chris.txt" />
+    <Content Include="TextLearning\from_sara.txt" />
+    <Content Include="TextLearning\test_email.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
