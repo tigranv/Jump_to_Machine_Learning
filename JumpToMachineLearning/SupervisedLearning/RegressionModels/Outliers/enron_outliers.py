@@ -6,7 +6,7 @@ from feature_format import featureFormat, targetFeatureSplit
 
 
 ### read in data dictionary, convert to numpy array
-data_dict = pickle.load(open("../JumpToMachineLearning/AppData/final_project_dataset.pkl", "rb")), "rb") fix_imports = True)
+data_dict = pickle.load(open("../JumpToMachineLearning/AppData/final_project_dataset.pkl", "rb"), fix_imports = True)
 features = ["salary", "bonus"]
 data = featureFormat(data_dict, features)
 
