@@ -8,7 +8,7 @@ from class_vis import Draw
 
 
 ### load in the dict of dicts containing all the data on each person in the dataset
-data_dict = pickle.load( open("../JumpToMachineLearning/AppData/final_project_dataset.pkl", "rb") )
+data_dict = pickle.load( open("../JumpToMachineLearning/AppData/final_project_dataset.pkl", "rb"), fix_imports = True )
 ### there's an outlier--remove it! 
 data_dict.pop("TOTAL", 0)
 
