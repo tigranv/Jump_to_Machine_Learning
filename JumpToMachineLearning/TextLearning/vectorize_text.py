@@ -72,8 +72,8 @@ from_chris.close()
 
 print(word_data[152])
 
-pickle.dump(word_data, open("../JumpToMachineLearning/TextLearning/my_word_data.pkl", "wb"))
-pickle.dump(from_data, open("../JumpToMachineLearning/TextLearning/my_email_authors.pkl", "wb"))
+#pickle.dump(word_data, open("../JumpToMachineLearning/TextLearning/my_word_data.pkl", "wb"))
+#pickle.dump(from_data, open("../JumpToMachineLearning/TextLearning/my_email_authors.pkl", "wb"))
 
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
