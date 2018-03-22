@@ -287,3 +287,5 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 /JumpToMachineLearning/AppData/maildir
+/JumpToMachineLearning/TextLearning/my_email_authors.pkl
+/JumpToMachineLearning/TextLearning/my_word_data.pkl

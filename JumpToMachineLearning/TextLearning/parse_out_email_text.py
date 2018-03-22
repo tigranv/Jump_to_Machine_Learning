@@ -1,4 +1,3 @@
-#!/usr/bin/python
 
 from nltk.stem.snowball import SnowballStemmer
 import string
@@ -49,6 +48,18 @@ def main():
     ff = open("../JumpToMachineLearning/TextLearning/test_email.txt", "r")
     text = parseOutText(ff)
     print(text)
+    print()
+    
+    f =  open("../JumpToMachineLearning/TextLearning/my_word_data.pkl", "rb")
+    f.seek(0)  ### go back to beginning of file (annoying)
+    word_data = f.read()
+    from nltk.corpus import stopwords
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    sw = stopwords.words("english")
+    vectorizer = TfidfVectorizer(stop_words="english", lowercase=True)
+    vectorizer.fit_transform(word_data)
+    bag_words = vectorizer.transform(word_data)
+    print(len(vectorizer.get_feature_names()))
 
 
 

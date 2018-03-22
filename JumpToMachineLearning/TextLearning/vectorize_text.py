@@ -1,11 +1,10 @@
-#!/usr/bin/python
 
 import os
 import pickle
 import re
 import sys
 
-sys.path.append( "../JumpToMachineLearning/TextLearning/" )
+sys.path.append("../JumpToMachineLearning/TextLearning/")
 from parse_out_email_text import parseOutText
 
 """
@@ -23,8 +22,8 @@ from parse_out_email_text import parseOutText
 """
 
 
-from_sara  = open("from_sara.txt", "r")
-from_chris = open("from_chris.txt", "r")
+from_sara = open("../JumpToMachineLearning/TextLearning/from_sara.txt", "r")
+from_chris = open("../JumpToMachineLearning/TextLearning/from_chris.txt", "r")
 
 from_data = []
 word_data = []
@@ -35,18 +34,25 @@ word_data = []
 ### temp_counter helps you only look at the first 200 emails in the list so you
 ### can iterate your modifications quicker
 temp_counter = 0
+replased_words = ["sara", "shackleton", "chris", "germani"]
 
 
 for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
     for path in from_person:
         ### only look at first 200 emails when developing
-        ### once everything is working, remove this line to run over full dataset
+        ### once everything is working, remove this line to run over full
+        ### dataset
         temp_counter += 1
-        if temp_counter < 200:
-            path = os.path.join('..', path[:-1])
+        if True: ###temp_counter < 200:
+            path = os.path.join('../JumpToMachineLearning/AppData/', path[:-1])
             print(path)
             email = open(path, "r")
+            text = parseOutText(email)
+            for word in replased_words:
+                text.replace(word, "")
 
+            word_data.append(text)
+            from_data.append(0 if name == "sara" else 1)
             ### use parseOutText to extract the text from the opened email
 
             ### use str.replace() to remove any instances of the words
@@ -54,7 +60,8 @@ for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
 
             ### append the text to word_data
 
-            ### append a 0 to from_data if email is from Sara, and 1 if email is from Chris
+            ### append a 0 to from_data if email is from Sara, and 1 if email
+            ### is from Chris
 
 
             email.close()
@@ -63,10 +70,19 @@ print("emails processed")
 from_sara.close()
 from_chris.close()
 
-pickle.dump( word_data, open("your_word_data.pkl", "w") )
-pickle.dump( from_data, open("your_email_authors.pkl", "w") )
+print(word_data[152])
 
+pickle.dump(word_data, open("../JumpToMachineLearning/TextLearning/my_word_data.pkl", "wb"))
+pickle.dump(from_data, open("../JumpToMachineLearning/TextLearning/my_email_authors.pkl", "wb"))
 
+from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import TfidfVectorizer
+sw = stopwords.words("english")
+vectorizer = TfidfVectorizer(stop_words="english", lowercase=True)
+vectorizer.fit_transform(word_data)
+#bag_words = vectorizer.transform(word_data)
+print(len(vectorizer.get_feature_names()))
+print(vectorizer.get_feature_names()[34597])
 
 
 
