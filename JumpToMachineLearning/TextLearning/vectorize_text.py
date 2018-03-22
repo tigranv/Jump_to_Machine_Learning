@@ -47,11 +47,11 @@ for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
             path = os.path.join('../JumpToMachineLearning/AppData/', path[:-1])
             print(path)
             email = open(path, "r")
-            text = parseOutText(email)
-            for word in replased_words:
-                text.replace(word, "")
+            words = parseOutText(email)
+            for x in ["sara", "shackleton", "chris", "germani"]:
+                words = words.replace(x, "")
 
-            word_data.append(text)
+            word_data.append(words)
             from_data.append(0 if name == "sara" else 1)
             ### use parseOutText to extract the text from the opened email
 
@@ -72,8 +72,8 @@ from_chris.close()
 
 print(word_data[152])
 
-#pickle.dump(word_data, open("../JumpToMachineLearning/TextLearning/my_word_data.pkl", "wb"))
-#pickle.dump(from_data, open("../JumpToMachineLearning/TextLearning/my_email_authors.pkl", "wb"))
+pickle.dump(word_data, open("../JumpToMachineLearning/TextLearning/my_word_data.pkl", "wb"))
+pickle.dump(from_data, open("../JumpToMachineLearning/TextLearning/my_email_authors.pkl", "wb"))
 
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer

@@ -26,6 +26,7 @@
     <Folder Include="NeuralNetworks\" />
     <Folder Include="FinalProject\" />
     <Folder Include="Helpers\" />
+    <Folder Include="FeatureSelection\" />
     <Folder Include="TextLearning\" />
     <Folder Include="SupervisedLearning\RegressionModels\" />
     <Folder Include="SupervisedLearning\RegressionModels\LinearRegression\" />
@@ -42,6 +43,7 @@
     <Folder Include="UnsupervisedLearning\DimensionalityReduction\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FeatureSelection\find_signature.py" />
     <Compile Include="Helpers\startup.py" />
     <Compile Include="Helpers\unix_converter.py">
       <SubType>Code</SubType>
@@ -103,6 +105,10 @@
     <Content Include="AppData\practice_outliers_net_worths.pkl" />
     <Content Include="AppData\python2_lesson06_keys.pkl" />
     <Content Include="AppData\word_data.pkl" />
+    <Content Include="FeatureSelection\email_authors.pkl" />
+    <Content Include="FeatureSelection\email_authors_overfit.pkl" />
+    <Content Include="FeatureSelection\word_data.pkl" />
+    <Content Include="FeatureSelection\word_data_overfit.pkl" />
     <Content Include="TextLearning\from_chris.txt" />
     <Content Include="TextLearning\from_sara.txt" />
     <Content Include="TextLearning\test_email.txt" />
