@@ -34,7 +34,7 @@ word_data = []
 ### temp_counter helps you only look at the first 200 emails in the list so you
 ### can iterate your modifications quicker
 temp_counter = 0
-replased_words = ["sara", "shackleton", "chris", "germani"]
+replased_words = ["sara", "shackleton", "chris", "germani", "sshacklensf"]
 
 
 for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
@@ -48,7 +48,7 @@ for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
             print(path)
             email = open(path, "r")
             words = parseOutText(email)
-            for x in ["sara", "shackleton", "chris", "germani"]:
+            for x in ["sara", "shackleton", "chris", "germani", "sshacklensf", "cgermannsf"]:
                 words = words.replace(x, "")
 
             word_data.append(words)
