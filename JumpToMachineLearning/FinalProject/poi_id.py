@@ -2,7 +2,7 @@
 
 import sys
 import pickle
-sys.path.append("../tools/")
+sys.path.append("../JumpToMachineLearning/FinalProject/")
 
 from feature_format import featureFormat, targetFeatureSplit
 from tester import dump_classifier_and_data

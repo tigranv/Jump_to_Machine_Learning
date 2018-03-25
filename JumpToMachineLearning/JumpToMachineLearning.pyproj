@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de08bfb8-529e-443f-893c-432f6048ecbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ValidationAndEvaluation\evaluate_poi_identifier.py</StartupFile>
+    <StartupFile>FinalProject\poi_id.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -44,6 +44,7 @@
     <Folder Include="UnsupervisedLearning\Clustering\" />
     <Folder Include="UnsupervisedLearning\DimensionalityReduction\" />
     <Folder Include="UnsupervisedLearning\DimensionalityReduction\PCA\" />
+    <Folder Include="ValidationAndEvaluation\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FeatureSelection\find_signature.py" />
