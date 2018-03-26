@@ -28,7 +28,7 @@
     <Folder Include="FinalProject\" />
     <Folder Include="Helpers\" />
     <Folder Include="FeatureSelection\" />
-    <Folder Include="C:\Users\Tigran PC\Source\Repos\Jump_to_Machine_Learning\JumpToMachineLearning\ValidationAndEvaluation\" />
+    <Folder Include="ValidationAndEvaluation\" />
     <Folder Include="TextLearning\" />
     <Folder Include="SupervisedLearning\RegressionModels\" />
     <Folder Include="SupervisedLearning\RegressionModels\LinearRegression\" />
